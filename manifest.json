@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "ProLX",
+    "version": "1.0",
+    "description": "Filtro de anúncios profissionais e particulares na pesquisa do OLX.",
+    "icons": {
+        "32": "icons/prolx32.png",
+        "48": "icons/prolx48.png",
+        "96": "icons/prolx96.png"
+    },
+
+    
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.olx.com.br/*"
+            ],
+            "js": [
+                "prolx.js"
+            ]
+            
+        }
+    ]
+}
